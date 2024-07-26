@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\norbe\\Desktop\\MusicBotVRC\\Engine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B56C6A4-4AAD-4FB8-8A77-AEA783D4B938}|JukeboxEngine.csproj|c:\\users\\norbe\\desktop\\musicbotvrc\\engine\\jukeboxengine\\websocket\\websocketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B56C6A4-4AAD-4FB8-8A77-AEA783D4B938}|JukeboxEngine.csproj|solutionrelative:jukeboxengine\\websocket\\websocketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B56C6A4-4AAD-4FB8-8A77-AEA783D4B938}|JukeboxEngine.csproj|C:\\Users\\norbe\\Desktop\\MusicBotVRC\\Engine\\jukeboxengine\\audio\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B56C6A4-4AAD-4FB8-8A77-AEA783D4B938}|JukeboxEngine.csproj|solutionrelative:jukeboxengine\\audio\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B56C6A4-4AAD-4FB8-8A77-AEA783D4B938}|JukeboxEngine.csproj|C:\\Users\\norbe\\Desktop\\MusicBotVRC\\Engine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B56C6A4-4AAD-4FB8-8A77-AEA783D4B938}|JukeboxEngine.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebSocketService.cs",
+              "DocumentMoniker": "C:\\Users\\norbe\\Desktop\\MusicBotVRC\\Engine\\JukeboxEngine\\WebSocket\\WebSocketService.cs",
+              "RelativeDocumentMoniker": "JukeboxEngine\\WebSocket\\WebSocketService.cs",
+              "ToolTip": "C:\\Users\\norbe\\Desktop\\MusicBotVRC\\Engine\\JukeboxEngine\\WebSocket\\WebSocketService.cs",
+              "RelativeToolTip": "JukeboxEngine\\WebSocket\\WebSocketService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T10:29:27.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\norbe\\Desktop\\MusicBotVRC\\Engine\\JukeboxEngine\\Audio\\Player.cs",
+              "RelativeDocumentMoniker": "JukeboxEngine\\Audio\\Player.cs",
+              "ToolTip": "C:\\Users\\norbe\\Desktop\\MusicBotVRC\\Engine\\JukeboxEngine\\Audio\\Player.cs",
+              "RelativeToolTip": "JukeboxEngine\\Audio\\Player.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T10:29:14.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\norbe\\Desktop\\MusicBotVRC\\Engine\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\norbe\\Desktop\\MusicBotVRC\\Engine\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T23:45:43.47Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

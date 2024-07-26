@@ -1,0 +1,13 @@
+{
+  "rtl": false,
+  "code": "en",
+  "name": "English",
+  "strings": {
+    "SIDEBAR_NAVIGATION": "Navigation",
+    "SIDEBAR_MANAGEMENT": "Management",
+    "SEARCH": "Search",
+    "SEARCH_DESCRIPTION": "Search for more songs",
+    "PLAYLIST": "Playlist",
+    "PLAYLIST_DESCRIPTION": "List of songs"
+  }
+}
