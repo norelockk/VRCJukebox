@@ -3,41 +3,29 @@
 import { defineAsyncComponent } from 'vue';
 
 import Loading from './components/Loading.vue';
+import Wrapper from './components/Wrapper.vue';
 import Sidebar from './components/Sidebar/Sidebar.vue';
-import Container from './components/Container.vue';
 
-const Player = defineAsyncComponent(() => import('./components/Player/Player.vue'))
+const Player = defineAsyncComponent(() => import('./components/Player/Player.vue'));
 </script>
 
 <template>
   <!-- App/template: begin -->
   <Loading />
 
-  <div class="leading-normal tracking-normal">
-    <Container>
-      <Sidebar />
-      <div class="absolute w-full pl-0 pl-64 min-h-full">
-        <div class="p-6 mb-20">
-          <!-- <transition name="fade" mode="out-in"> -->
-          <router-view />
-          <!-- </transition> -->
-        </div>
-      </div>
-      <Player />
-    </Container>
+  <div class="jukebox-gui">
+    <Sidebar />
+    <Player />
+    <Wrapper>
+      <router-view />
+    </Wrapper>
   </div>
   <!-- App/template: end -->
 </template>
 
 <style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+.jukebox-gui {
+  @apply flex relative h-full;
 }
 </style>
 <!-- App: end -->

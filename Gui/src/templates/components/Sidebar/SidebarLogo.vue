@@ -6,8 +6,8 @@ import Constants from '@/constants';
 
 <template>
   <!-- SidebarLogo/template: begin -->
-  <div class="w-full h-20 border-b dark:border-neutral-500 flex px-2 items-center mb-5">
-    <div class="dark:text-white px-2 flex pointer-events-none touch-none">
+  <div class="sidebar-logo">
+    <div class="logo">
       <!-- SidebarLogo/template/logotype: begin -->
       <img :src="Logo" class="w-8 h-8" />
       <!-- SidebarLogo/template/logotype: end -->
@@ -19,4 +19,14 @@ import Constants from '@/constants';
   </div>
   <!-- SidebarLogo/template: end -->
 </template>
+
+<style scoped>
+.sidebar-logo {
+  @apply w-full h-20 border-b dark:border-neutral-500 flex px-2 items-center mb-5;
+}
+
+.sidebar-logo .logo {
+  @apply dark:text-white text-accent px-2 flex pointer-events-none touch-none;
+}
+</style>
 <!-- SidebarLogo: end -->

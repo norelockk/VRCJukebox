@@ -50,15 +50,19 @@ onMounted(() => {
 
 <template>
   <!-- Player/template: begin -->
-  <div class="fixed bottom-0 z-50 w-full py-3 dark:bg-neutral-800 bg-accent text-white">
+  <div class="player">
     <PlayerProgress :progress="progress" :length="length" />
     <PlayerContainer>
-      <PlayerInfo :title="title" :artists="artists" :artwork-url="currentPlayingId.length !== 0 ? `${Constants.API_URL}/artwork?trackId=${currentPlayingId}` : 'logo'" />
+      <PlayerInfo :title="title" :artists="artists" :artwork-url="currentPlayingId.length !== 0 || currentPlayingId !== '-1' ? `${Constants.API_URL}/artwork?trackId=${currentPlayingId}` : 'logo'" />
       <PlayerControls :state="playback" :volume="volume" />
     </PlayerContainer>
   </div>
   <!-- Player/template: end -->
 </template>
 
-<style scoped></style>
+<style scoped>
+.player {
+  @apply fixed bottom-0 z-50 w-full py-3 dark:bg-neutral-800 bg-accent text-white
+}
+</style>
 <!-- Player: end -->

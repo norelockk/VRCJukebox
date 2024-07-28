@@ -6,6 +6,8 @@ import { api, socket } from '@/core';
 import { usePlaylistStore } from '@/store';
 import { GlobalSearchResponse, SpotifySearchResponse, WebSocketSend, YoutubeSearchResponse, PlaylistResponse } from '@/types';
 
+import LoadingIcon from '../components/Icons/LoadingIcon.vue';
+
 const query = ref<string>('');
 const loading = ref<boolean>(false);
 const results = ref<YoutubeSearchResponse[] | SpotifySearchResponse[]>([]);
@@ -124,7 +126,7 @@ const isTrackAlreadyDownloaded = (author: string, title: string): boolean => {
   <div class="relative py-2" v-if="isEmpty(results) || loading || platform !== resultPlatform">
     <!-- Show loading or no results message here -->
     <div v-if="isEmpty(results) && loading || !isEmpty(results) && loading">
-      <div class="loader"></div>
+      <LoadingIcon />
     </div>
 
     <div v-if="(!isEmpty(results) || !loading) || !isEmpty(results)">
@@ -195,42 +197,3 @@ const isTrackAlreadyDownloaded = (author: string, title: string): boolean => {
     </table>
   </div>
 </template>
-
-<style scoped>
-.loader {
-  width: 45px;
-  aspect-ratio: 1;
-  --c: no-repeat linear-gradient(#000 0 0);
-  background:
-    var(--c) 0% 100%,
-    var(--c) 50% 100%,
-    var(--c) 100% 100%;
-  animation: l2 1s infinite linear;
-}
-
-@keyframes l2 {
-  0% {
-    background-size: 20% 100%, 20% 100%, 20% 100%
-  }
-
-  20% {
-    background-size: 20% 60%, 20% 100%, 20% 100%
-  }
-
-  40% {
-    background-size: 20% 80%, 20% 60%, 20% 100%
-  }
-
-  60% {
-    background-size: 20% 100%, 20% 80%, 20% 60%
-  }
-
-  80% {
-    background-size: 20% 100%, 20% 100%, 20% 80%
-  }
-
-  100% {
-    background-size: 20% 100%, 20% 100%, 20% 100%
-  }
-}
-</style>

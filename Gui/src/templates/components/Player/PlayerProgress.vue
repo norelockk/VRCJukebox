@@ -38,12 +38,19 @@ onMounted(() => {
 
 <template>
   <!-- PlayerProgress/template: begin -->
-  <div ref="progressBar" class="absolute transition-all top-0 w-full h-1 hover:h-3 hover:-translate-y-2 cursor-pointer dark:bg-neutral-700 bg-white">
-    <div class="absolute h-full transition-all dark:bg-white bg-primary" :style="{ width: `${props.progress * 100}%` }"></div>
+  <div ref="progressBar" class="progress">
+    <div class="fill" :style="{ width: `${props.progress * 100}%` }"></div>
   </div>
   <!-- PlayerProgress/template: end -->
 </template>
 
 <style scoped>
+.player .progress {
+  @apply absolute transition-all top-0 w-full h-1 hover:h-3 hover:-translate-y-2 cursor-pointer dark:bg-neutral-700 bg-white;
+}
+
+.player .progress .fill {
+  @apply absolute h-full transition-all dark:bg-white bg-primary;
+}
 </style>
 <!-- PlayerProgress.vue: end -->

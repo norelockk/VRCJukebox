@@ -84,15 +84,15 @@ const changePlaybackState = (): void => {
 <template>
   <!-- PlayerControls/template: begin -->
   <!-- Button (play/pause etc) -->
-  <div class="inset-center hidden md:block">
-    <button @click="changePlaybackState" class="flex h-11 w-11 cursor-pointer transition-all dark:bg-neutral-700 hover:dark:bg-neutral-600 bg-gray-200 hover:bg-gray-400 items-center justify-center rounded-full">
-      <i class="dark:text-white text-black mx-2 fa-solid" :class="playbackIcon(state)"></i>
+  <div class="state">
+    <button @click="changePlaybackState" class="button">
+      <i class="icon fa-solid" :class="playbackIcon(state)"></i>
     </button>
   </div>
 
   <!-- Volume control -->
-  <div class="flex items-center space-x-6">
-    <div class="hidden items-center space-x-3 md:flex">
+  <div class="volume-container">
+    <div class="volume-wrapper">
       <i class="fa-solid fa-volume-high"></i>
       <input
         type="range"
@@ -104,7 +104,7 @@ const changePlaybackState = (): void => {
         :value="volume"
         min="0"
         max="100"
-        class="volume w-full h-2 rounded-lg appearance-none cursor-pointer"
+        class="volume"
       />
     </div>
   </div>
@@ -112,8 +112,29 @@ const changePlaybackState = (): void => {
 </template>
 
 <style scoped>
+.state {
+  @layer inset-center;
+  @apply hidden md:block;
+}
+
+.state .button {
+  @apply flex h-11 w-11 cursor-pointer transition-all dark:bg-neutral-700 hover:dark:bg-neutral-600 bg-gray-200 hover:bg-gray-400 items-center justify-center rounded-full
+}
+
+.state .button .icon {
+  @apply dark:text-white text-black mx-2;
+}
+
+.volume-container {
+  @apply flex items-center space-x-6;
+}
+
+.volume-container .volume-wrapper {
+  @apply hidden items-center space-x-3 md:flex;
+}
+
 .volume {
-  @apply w-full h-2 rounded-lg cursor-pointer;
+  @apply w-full h-2 rounded-lg appearance-none cursor-pointer;
   -webkit-appearance: none;
   appearance: none;
 }

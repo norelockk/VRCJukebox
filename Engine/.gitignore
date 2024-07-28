@@ -11,12 +11,14 @@ mono_crash.*
 # Mono auto generated files
 mono_*.tmp
 
-# User-specific files (VSCode)
+# User-specific files (VSCode & VS)
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.vs
+.vs/*
 
 # OS generated files
 .DS_Store

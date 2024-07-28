@@ -10,8 +10,8 @@
     <Authors>VRCJukebox</Authors>
     <Company>VRCJukebox</Company>
     <Copyright>VRCJukebox</Copyright>
-    <FileVersion>2024.7.15.1</FileVersion>
-    <AssemblyVersion>2024.7.15.1</AssemblyVersion>
+    <FileVersion>2024.7.26.0</FileVersion>
+    <AssemblyVersion>2024.7.26.0</AssemblyVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="JukeboxEngine\Behaviors\**" />

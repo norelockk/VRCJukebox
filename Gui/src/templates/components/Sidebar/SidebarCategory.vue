@@ -14,7 +14,13 @@ defineProps({
 
 <template>
   <!-- SidebarCategory/template: begin -->
-  <p class="pl-4 dark:text-white text-sm font-light mb-3" v-text="t(str)"></p>
+  <p class="sidebar-category" v-text="t(str)"></p>
   <!-- SidebarCategory/template: end -->
 </template>
+
+<style scoped>
+.sidebar-category {
+  @apply pl-4 text-accent dark:text-white text-sm font-light mb-3;
+}
+</style>
 <!-- SidebarCategory: end -->

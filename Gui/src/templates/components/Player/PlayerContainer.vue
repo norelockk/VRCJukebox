@@ -1,7 +1,7 @@
 <!-- PlayerContainer: begin -->
 <template>
   <!-- PlayerContainer/template: begin -->
-  <div class="container relative flex items-center justify-between mt-2">
+  <div class="container player-inside">
     <slot></slot>
   </div>
   <!-- PlayerContainer/template: end -->
@@ -28,6 +28,10 @@
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.player-inside {
+  @apply relative flex items-center justify-between mt-2;
 }
 </style>
 <!-- PlayerContainer: end -->

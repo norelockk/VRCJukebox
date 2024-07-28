@@ -4,7 +4,7 @@ namespace JukeboxEngine;
 
 public static class Constants
 {
-  public static readonly string projectName = "VRChat Music Bot";
+  public static readonly string projectName = "VRCJukebox";
   public static readonly string projectLogo = Figgle.FiggleFonts.Standard.Render(projectName);
   public static readonly string projectVersion = Assembly.GetEntryAssembly()?.GetName().Version?.ToString()!;
 }

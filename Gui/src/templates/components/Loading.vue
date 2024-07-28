@@ -67,7 +67,7 @@ const loading = useLoadingStore();
     var(--c) 0% 100%,
     var(--c) 50% 100%,
     var(--c) 100% 100%;
-  animation: l2 1s infinite linear;
+  animation: l2 1s infinite ease;
 }
 
 @keyframes l2 {

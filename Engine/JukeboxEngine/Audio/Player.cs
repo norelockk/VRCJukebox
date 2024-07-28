@@ -22,7 +22,7 @@ public class Player : WaveOutEvent
 
   public long GetCurrentPosition()
   {
-    if (PlaybackState != PlaybackState.Stopped || CurrentAudio is not null)
+    if (PlaybackState is not PlaybackState.Stopped || CurrentAudio is not null)
       return CurrentAudio!.Position / (CurrentAudio.WaveFormat.SampleRate * CurrentAudio.WaveFormat.BlockAlign);
 
     return 0;
@@ -30,7 +30,7 @@ public class Player : WaveOutEvent
 
   public long GetCurrentLength()
   {
-    if (PlaybackState != PlaybackState.Stopped || CurrentAudio is not null)
+    if (PlaybackState is not PlaybackState.Stopped || CurrentAudio is not null)
       return CurrentAudio!.Length / (CurrentAudio.WaveFormat.SampleRate * CurrentAudio.WaveFormat.BlockAlign);
 
     return 1;

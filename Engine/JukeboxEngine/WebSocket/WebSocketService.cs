@@ -14,14 +14,15 @@ public class WebSocketService : WebSocketServer
   private static string GetAvailablePort()
   {
     for (int port = basePort; port <= basePort + 100; port++)
-      if (IsPortAvailable(port)) {
-        #if DEBUG
+      if (IsPortAvailable(port))
+      {
+#if DEBUG
         return $"ws://{IPAddress.Loopback}:{port}";
-        #endif
+#endif
 
-        #if RELEASE
+#if RELEASE
         return $"ws://{IPAddress.Any}:{port}";
-        #endif
+#endif
       }
 
     throw new Exception("No available port found");
@@ -53,10 +54,15 @@ public class WebSocketService : WebSocketServer
     {
       if (_clients.Count == 0) continue;
 
-      state = new();
-      await Task.Delay(500);
+      try
+      {
+        state = new();
 
-      if (state.Response is not null) await SendMessage(state.ToJson());
+        if (state.Response is not null) await SendMessage(state.ToJson());
+      }
+      catch {
+      }
+      await Task.Delay(500);
     }
   }
 
